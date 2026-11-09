@@ -1,0 +1,132 @@
+:root {
+  color-scheme: dark;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #1c1d20;
+  color: #eceef2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 42px minmax(0, 1fr) 28px;
+  background: #1c1d20;
+}
+
+.toolbar,
+.statusbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 14px;
+  background: #25272b;
+}
+
+.toolbar {
+  border-bottom: 1px solid #393b40;
+}
+
+.brand {
+  font-size: 13px;
+  font-weight: 650;
+  letter-spacing: .02em;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+button {
+  border: 1px solid #50535a;
+  border-radius: 5px;
+  padding: 5px 12px;
+  background: #32353b;
+  color: #f2f3f5;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #40434a;
+}
+
+button#save {
+  border-color: #41865f;
+  background: #247544;
+}
+
+button#save:hover {
+  background: #2d8c51;
+}
+
+#editor {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  background: #1c1d20;
+}
+
+.statusbar {
+  justify-content: flex-start;
+  gap: 14px;
+  border-top: 1px solid #393b40;
+  color: #aeb2bb;
+  font-size: 11px;
+}
+
+#mode {
+  min-width: 52px;
+  color: #8dc9a2;
+  font-weight: 700;
+}
+
+.ace-chrome {
+  background: #1c1d20 !important;
+  color: #eceef2 !important;
+}
+
+.ace-chrome .ace_gutter {
+  background: #25272b !important;
+  color: #8d929c !important;
+}
+
+.ace-chrome .ace_print-margin {
+  background: #34363b !important;
+}
+
+.ace-chrome .ace_cursor {
+  color: #f5f6f8 !important;
+}
+
+.ace-chrome .ace_marker-layer .ace_active-line {
+  background: #2b2e34 !important;
+}
+
+.ace-chrome .ace_gutter-active-line {
+  background: #34373e !important;
+}
+
+.ace-chrome .ace_marker-layer .ace_selection {
+  background: #3a536f !important;
+}
+
+.ace-chrome .ace_invisible {
+  color: #535760 !important;
+}
+
+.ace-chrome .ace_indent-guide {
+  opacity: .35;
+}

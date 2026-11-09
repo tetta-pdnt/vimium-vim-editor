@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vimium Text Editor</title>
+  <link rel="stylesheet" href="editor.css">
+</head>
+<body>
+  <header class="toolbar">
+    <div class="brand">Vim editor</div>
+    <div class="actions">
+      <button id="cancel" type="button" title="Discard and close">Cancel</button>
+      <button id="save" type="button" title="Save and close">Save</button>
+    </div>
+  </header>
+  <main id="editor" aria-label="Text editor"></main>
+  <footer class="statusbar">
+    <span id="mode">VIM</span>
+    <span class="help">Esc: normal mode · ZZ / Ctrl+Enter: save and close</span>
+  </footer>
+  <script src="vendor/ace.js"></script>
+  <script src="editor.js"></script>
+</body>
+</html>

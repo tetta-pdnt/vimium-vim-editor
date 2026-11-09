@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Vimium Text Editor",
+  "version": "0.1.0",
+  "description": "Hint-select a text field and edit it with Ace Vim mode.",
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "all_frames": false
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["editor.html", "editor.css", "editor.js", "vendor/ace.js"],
+      "matches": ["http://*/*", "https://*/*"]
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}
